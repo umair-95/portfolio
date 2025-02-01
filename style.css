@@ -1,0 +1,436 @@
+body{
+    /* background-color: #E7E8D1; */
+    margin:0;
+    padding:0;
+    font-family: "oswald",sans-serif;
+}
+
+
+/* -----------------------------------header----------------------------------------------*/
+
+header{
+  /* display:flex;
+  justify-content: space-between; */
+  background-color: #31572c;
+  color:white;
+  padding: 20px;
+  align-items: right;
+  
+}
+
+header h2{
+  margin: 0;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    margin-left: 20px;
+  
+}
+
+nav a:hover{
+    color:  rgb(90, 78, 78);   
+}
+
+nav i{
+    padding:10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Add Bootstrap utility classes */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack header items */
+  }
+}
+
+/* ------------------------------------home--------------------------------------------------- */
+
+.home-content{
+  display: flex;
+  background: url("") ;
+  text-align:center;
+  height:100vh;
+  background-color:#ecf39e;
+  display:flex;
+  justify-content: space-around;
+}
+
+.home-content ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.resume{
+color: #ecf39e;
+border: solid 1px #0e0a0a;
+padding: 1rem;
+border-radius: 4px;
+text-decoration: none;
+font: 16px "open sans", sans serif;
+transition: all0.4s ease;
+}
+
+
+.resume:hover{
+  color: #90a955;
+  box-shadow: 0 0 20px rgba(46, 39, 35, 0.7), 0 0 30px;
+  transition: glow 1.5s infinite;
+  letter-spacing: 2px;
+}
+
+.home-content h2{
+    display:flex;
+    justify-content: center;
+}
+
+.home-box{
+    text-align:center;
+    justify-content: center;
+    padding: 100px;
+}
+
+#my-pic{
+    height:360px; 
+    width: 380px;
+    border: 5px solid #B85042;
+    box-shadow: 10px 5px 5px #B85042;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* Add Bootstrap utility classes */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column; /* Stack elements vertically */
+  }
+}
+
+/*-------------------------------------about  section----------------------------------------------*/
+
+.about-content{
+background-color: white;
+padding:50px;
+}
+
+.about-intro {  
+display:flex;
+justify-content: center;
+align-items:center;
+color: black;
+flex-direction:column;
+}
+
+.about-para{
+font-size: 20px;
+text-align:justify;
+padding:40px;
+margin: 0 auto;
+width: 700px;
+}
+
+/* Add Bootstrap utility classes */
+@media (max-width: 768px) {
+  .about-para {
+    font-size: 18px; /* Adjust font size */
+  }
+}
+
+/*--------------------------------------Technical skills section----------------------------------------*/
+
+.skills-section{
+  background-color: #ecf39e;
+  padding: 50px;
+  margin: 0;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 25px;
+  border-radius: 25x;
+  color:red;
+  text-align: center;
+  line-height: 25px; 
+  color:white;/*light of the progress bar*/
+}
+
+.progress{
+  background-color: #e0e0e0;
+  border-radius: 25px;
+}
+
+/* Colorful Progress Bars */
+.html-progress {
+  background-color: #f0390b; /* HTML Color */
+}
+
+.CSS-progress {
+  background-color: #1572B6; /* CSS Color */
+}
+
+.javascript-progress {
+  background-color: #F7DF1E; /* JavaScript Color */
+}
+
+.react-progress {
+  background-color: #61DAFB; /* React Color */
+}
+
+.github-progress{
+  background-color: #1572B6; /*Github Color*/
+}
+
+/* Add Bootstrap utility classes */
+@media (max-width: 768px) {
+  .skills-section {
+    flex-direction: column; /* Stack skills vertically */
+  }
+}
+
+/* Striped effect */
+
+.progress-value {
+position: absolute; /* Position the value inside the progress bar */
+width: 100%; /* Ensure it covers the full width */
+text-align: center; /* Center the text */
+line-height: 25px; /* Vertically center the text */
+color: white; /* Text color */
+font-weight: bold; /* Make the text bold */
+z-index: 2; /* Ensure the text is above the stripes */
+}
+
+@keyframes progressAnimation {
+  0% {
+      background-position: 0 0; /* Start position */
+  }
+  100% {
+      background-position: 1rem 0; /* End position */
+  }
+}
+
+/* --------------------------------------Resume section-------------------------------------------- */
+
+.resume-content{
+  background-color: white;
+  width: 100%;
+  display:flex;
+  font-size:15px;
+  flex-wrap: wrap;
+}
+
+.resume-content h2{
+padding:20px 20px;
+text-align: center;
+}
+
+.resume-content p{
+font-family:'Oswald', sans-serif;
+text-align: left;
+padding: 20px;
+line-height: 1.5;
+}
+
+.resume-main-part{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.resume-left{
+flex-basis: 50%;
+padding:20px;
+}
+
+.resume-left ul{
+  line-height: 1.5;
+}
+
+.projects , .professional-experience {
+border-left: 1px solid #030303;
+padding-left: 10px; 
+}
+  
+.resume-right{
+flex-basis:50%;
+padding-left:5px;
+}
+
+.education-details , .list {
+padding-left: 5px;
+border-left: 1px solid#030303;
+}
+
+#qualification{
+  padding-top:20px;
+}
+.education-details td{
+  padding-left:30px;
+}
+
+/* Add Bootstrap utility classes */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .resume-content {
+    flex-direction: column; /* Stack resume sections */
+  }
+}
+  
+/* ---------------------------------- CONTACT ME SECTION ----------------------------------- */
+
+/* Section Header */
+.section-header {
+  background-color: #ecf39e; /* Light green background */
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+  background-color: #ecf39e;/* Light green background */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 30px;
+  position: relative;
+  /* max-width: 900px; */
+}
+
+.contact-wrapper{
+  background-color: #ecf39e  !important;
+}
+
+/*-------------------------------- Left Contact Page (Form) -------------------------------------*/
+.form-horizontal {
+  background-color: #ecf39e; /* Light green background */
+  width: 400px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.form-control {
+  width: 400px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.send-button {
+  width: 400px;
+  padding: 10px;
+  background-color: #31572c; /* Dark green background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #90a955; /* Lighter green on hover */
+}
+
+/*----------------------- Right Contact Page (Direct Contact Info) -----------------------------*/
+.direct-contact-container {
+  max-width: 400px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  line-height: 4;
+  color: black;
+}
+
+.contact-text {
+  font: 300 19px 'Lato', sans-serif;
+  letter-spacing: 2.5px;
+  color: black;
+}
+
+.contact-text a {
+  color: #070707;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+  color: #fff;
+}
+
+/* Social Media Icons */
+.social-media-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.contact-icon {
+  color: white;
+  background-color: rgb(10, 10, 10);
+  padding: 17px;
+  border-radius: 15px;
+  font-size: 25px;
+}
+
+.social-media-list a:hover {
+  color: rgb(226, 223, 223);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-horizontal,
+  .direct-contact-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-control,
+  .send-button {
+    width: 100%;
+  }
+}
+
+/*---------------------------------- footer ------------------------------------*/
+  
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 15px;
+  }
+
+footer{
+  background-color: #31572c;
+  height: 50px;
+  color: white;
+}
